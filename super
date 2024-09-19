@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        // Выводим приветственное сообщение
+        System.out.println("Hello, World!");
+
+        // Создаем объект для считывания ввода с клавиатуры
+        Scanner scanner = new Scanner(System.in);
+
+        // Запрашиваем имя пользователя
+        System.out.print("Введите ваше имя: ");
+        String name = scanner.nextLine();
+
+        // Приветствуем пользователя по имени
+        System.out.println("Привет, " + name + "!");
+
+        // Закрываем сканер
+        scanner.close();
+    }
+}
